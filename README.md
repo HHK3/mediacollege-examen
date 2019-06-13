@@ -1,2 +1,2 @@
-# mediacollege-examen
-GitHub rep. for my Front-End Exam Project. Developed in Nuxt.js
+# Mediacollege Examen: Flash It
+GitHub rep. for my Front-End Exam Project: Flash It. Developed in Nuxt.js
