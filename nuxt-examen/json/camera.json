@@ -1,52 +1,270 @@
 [
   {
     "id" : 1,
-    "name" : "Pilsener 12 pack",
-    "price" : 11.99,
-    "percentage" : 5,
-    "amount" : 192,
-    "spec" : "12 x 25cl",
-    "brand" : "Heineken",
-    "allergies": "Gluten"
+    "name" : "Canon EOS M50 + 15-45mm IS STM",
+    "urlname" : "canon-eos-m50-black-15-45mm-is-stm",
+    "price" : 549,
+    "color" : "Black",
+    "amount" : 50,
+    "megapixels" : 30.4,
+    "screen_sensor" : "APS-C",
+    "level" : "Beginner",
+    "brand" : "Canon",
+    "image" : [
+      {
+        "id" : 1,
+        "url" : "/camera/canon_eos_m50/992238.jpg"
+      },
+      {
+        "id" : 2,
+        "url" : "/camera/canon_eos_m50/991201.jpg"
+      },
+      {
+        "id" : 3,
+        "url" : "/camera/canon_eos_m50/99197.jpg"
+      }
+    ]
   },
+
   {
     "id" : 2,
-    "name" : "Pilsener Case",
-    "price" : 17.99,
-    "percentage" : 5,
-    "amount" : 122,
-    "spec" : "24 x 25cl",
-    "brand" : "Heineken",
-    "allergies": "Gluten"
+    "name" : "Panasonic Lumix DMC-SZ10",
+    "urlname" : "panasonic-lumix-dmc-sz10-black",
+    "price" : 128,
+    "color" : "Black",
+    "amount" : 17,
+    "megapixels" : 30.4,
+    "screen_sensor" : "1/2.3",
+    "level" : "Beginner",
+    "brand" : "Lumix",
+    "image" : [
+      {
+        "id" : 1,
+        "url" : "/camera/panasonic_lumix_dmc_sz10/668842.jpg"
+      },
+      {
+        "id" : 2,
+        "url" : "/camera/panasonic_lumix_dmc_sz10/668844.jpg"
+      },
+      {
+        "id" : 3,
+        "url" : "/camera/panasonic_lumix_dmc_sz10/670744.jpg"
+      }
+    ]
   },
+
   {
     "id" : 3,
-    "name" : "Pilsener 6pack",
-    "price" : 7.99,
-    "percentage" : 5,
-    "amount" : 81,
-    "spec" : "6 x 50cl",
-    "brand" : "Heineken",
-    "allergies": "Gluten"
+    "name" : "Polaroid Snap Touch Instant",
+    "urlname" : "polaroid-snap-touch-instant",
+    "price" : 199,
+    "color" : "Black",
+    "amount" : 75,
+    "megapixels" : 13,
+    "screen_sensor" : "1/3.5",
+    "level" : "Beginner",
+    "brand" : "Polaroid",
+    "image" : [
+      {
+        "id" : 1,
+        "url" : "/camera/polaroid_snap_touch_instant/699067.jpg"
+      },
+      {
+        "id" : 2,
+        "url" : "/camera/polaroid_snap_touch_instant/698080.jpg"
+      },
+      {
+        "id" : 3,
+        "url" : "/camera/polaroid_snap_touch_instant/698084.jpg"
+      }
+    ]
   },
+
   {
     "id" : 4,
-    "name" : "Radler Citroen 6pack",
-    "price" : 4.99,
-    "percentage" : 2,
-    "amount" : 81,
-    "spec" : "6 x 30cl",
-    "brand" : "Amstel",
-    "allergies": "Gluten"
+    "name" : "Vtech Kidizoom Duo 5.0",
+    "urlname" : "vtech-kidizoom-duo-5",
+    "price" : 69.95,
+    "color" : "Blue",
+    "amount" : 131,
+    "megapixels" : 5,
+    "screen_sensor" : "CMOS",
+    "level" : "Kids",
+    "brand" : "Vtech",
+    "image" : [
+      {
+        "id" : 1,
+        "url" : "/camera/vtech_kidizoom_duo_5/1083225.jpg"
+      },
+      {
+        "id" : 2,
+        "url" : "/camera/vtech_kidizoom_duo_5/1082734.jpg"
+      },
+      {
+        "id" : 3,
+        "url" : "/camera/vtech_kidizoom_duo_5/1083226.jpg"
+      }
+    ]
   },
   {
     "id" : 5,
-    "name" : "Extra Mexican Pilsener Case",
-    "price" : 24.99,
-    "percentage" : 4.5,
-    "amount" : 81,
-    "spec" : "24 x 33cl",
-    "brand" : "Corona",
-    "allergies": "Gluten"
+    "name" : "Nikon Coolpix P900",
+    "urlname" : "nikon-coolpix-p900",
+    "price" : 529,
+    "color" : "Black",
+    "amount" : 33,
+    "megapixels" : 30.4,
+    "screen_sensor" : "1/2.3",
+    "level" : "Advanced",
+    "brand" : "Nikon",
+    "image" : [
+      {
+        "id" : 1,
+        "url" : "/camera/nikon_coolpix_p900/378035.jpg"
+      },
+      {
+        "id" : 2,
+        "url" : "/camera/nikon_coolpix_p900/378037.jpg"
+      },
+      {
+        "id" : 3,
+        "url" : "/camera/nikon_coolpix_p900/542324.jpg"
+      }
+    ]
+  },
+
+  {
+    "id" : 6,
+    "name" : "Panasonic Lumix DMC-G7MEG-K + 12-60mm",
+    "urlname" : "panasonic-lumix-dmc-g7megk-12-60mm",
+    "price" : 548,
+    "color" : "Black",
+    "amount" : 4,
+    "megapixels" : 16,
+    "screen_sensor" : "Micro Four Thirds",
+    "level" : "Advanced",
+    "brand" : "Lumix",
+    "image" : [
+      {
+        "id" : 1,
+        "url" : "/camera/panasonic_lumix_dmc_g7megk_12_60mm/629686.jpg"
+      },
+      {
+        "id" : 2,
+        "url" : "/camera/panasonic_lumix_dmc_g7megk_12_60mm/630585.jpg"
+      },
+      {
+        "id" : 3,
+        "url" : "/camera/panasonic_lumix_dmc_g7megk_12_60mm/568362.jpg"
+      }
+    ]
+  },
+
+  {
+    "id" : 7,
+    "name" : "Sony Alpha A6400 Body",
+    "urlname" : "sony-alpha-a6400-body",
+    "price" : 1049,
+    "color" : "Black",
+    "amount" : 3,
+    "megapixels" : 24.2,
+    "screen_sensor" : "APS-C",
+    "level" : "Advanced",
+    "brand" : "Sony",
+    "image" : [
+      {
+        "id" : 1,
+        "url" : "/camera/sony_alpha_a6400_body/1183533.jpg"
+      },
+      {
+        "id" : 2,
+        "url" : "/camera/sony_alpha_a6400_body/1183532.jpg"
+      },
+      {
+        "id" : 3,
+        "url" : "/camera/sony_alpha_a6400_body/1183310.jpg"
+      }
+    ]
+  },
+
+  {
+    "id" : 8,
+    "name" : "Sony Alpha A7III",
+    "urlname" : "sony-alpha-a7iii",
+    "price" : 2149,
+    "color" : "Black",
+    "amount" : 41,
+    "megapixels" : 24.2,
+    "screen_sensor" : "Full Frame",
+    "level" : "Expert",
+    "brand" : "Sony",
+    "image" : [
+      {
+        "id" : 1,
+        "url" : "/camera/sony_alpha_a7iii/993377.jpg"
+      },
+      {
+        "id" : 2,
+        "url" : "/camera/sony_alpha_a7iii/994299.jpg"
+      },
+      {
+        "id" : 3,
+        "url" : "/camera/sony_alpha_a7iii/994296.jpg"
+      }
+    ]
+  },
+
+  {
+    "id" : 9,
+    "name" : "Sony Cybershot DSC-RX100 VI",
+    "urlname" : "sony-cybershot-dsc-rx100-vi",
+    "price" : 1169,
+    "color" : "Black",
+    "amount" : 39,
+    "megapixels" : 20.1,
+    "screen_sensor" : "1\"",
+    "level" : "Expert",
+    "brand" : "Sony",
+    "image" : [
+      {
+        "id" : 1,
+        "url" : "/camera/sony_cybershot_dsc_rx100_vi/1062824.jpg"
+      },
+      {
+        "id" : 2,
+        "url" : "/camera/sony_cybershot_dsc_rx100_vi/1062821.jpg"
+      },
+      {
+        "id" : 3,
+        "url" : "/camera/sony_cybershot_dsc_rx100_vi/1068367.jpg"
+      }
+    ]
+  },
+
+  {
+    "id" : 10,
+    "name" : "Canon EOS 5D Mark IV Body",
+    "urlname" : "canon-eos-5d-mark-iv-body",
+    "price" : 3179,
+    "color" : "Black",
+    "amount" : 6,
+    "megapixels" : 30.4,
+    "screen_sensor" : "Full Frame",
+    "level" : "Expert",
+    "brand" : "Canon",
+    "image" : [
+      {
+        "id" : 1,
+        "url" : "/camera/canon_eos_5d_mark_iv_body/640623.jpg"
+      },
+      {
+        "id" : 2,
+        "url" : "/camera/canon_eos_5d_mark_iv_body/640622.jpg"
+      },
+      {
+        "id" : 3,
+        "url" : "/camera/canon_eos_5d_mark_iv_body/639735.jpg"
+      }
+    ]
   }
 ]

@@ -1,3 +1,15 @@
 @tailwind base;
+
+.page-enter-active, .page-leave-active {
+    transition: opacity .5s;
+}
+.page-enter, .page-leave-to {
+    opacity: 0;
+}
+
+.overflow-dots {
+    text-overflow: ellipsis;
+}
+
 @tailwind components;
 @tailwind utilities;
