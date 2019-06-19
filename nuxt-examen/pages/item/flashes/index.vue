@@ -1,20 +1,10 @@
 <template>
     <div class="container mx-auto py-16">
-        <h1 class="font-heading uppercase mb-8">Popular Cameras</h1>
+        <h1 class="font-heading uppercase mb-8">Popular Flashes</h1>
         <div class="item-container flex flex-wrap -mx-4">
-            <nuxt-link :to="'/item/camera/' + camera.id" v-for="camera in json" :key="camera.id" class="w-full md:w-1/3 px-4 mb-12 no-underline">
-                <img :src="require ('@/assets/img' + camera.image[0].url)" alt="cover" width="300px">
-                <div class="text-black font-semibold text-lg overflow-hidden whitespace-no-wrap overflow-dots pb-1">{{camera.name}}</div>
-                <br>
-            </nuxt-link>
             <nuxt-link :to="'/item/flashes/' + flash.id" v-for="flash in flashes" :key="flash.id" class="w-full md:w-1/3 px-4 mb-12 no-underline">
-                <img :src="require ('@/assets/img' + flash.image[0].url)" alt="cover" width="200px">
+                <img :src="require ('@/assets/img' + flash.image[0].url)" alt="cover" class="flash_img">
                 <div class="text-black font-semibold text-lg overflow-hidden whitespace-no-wrap overflow-dots pb-1">{{flash.name}}</div>
-                <br>
-            </nuxt-link>
-            <nuxt-link :to="'/item/accessoires/' + accessoires.id" v-for="accessoires in accessoiress" :key="accessoires.id" class="w-full md:w-1/3 px-4 mb-12 no-underline">
-                <img :src="require ('@/assets/img' + accessoires.image[0].url)" alt="cover" width="200px">
-                <div class="text-black font-semibold text-lg overflow-hidden whitespace-no-wrap overflow-dots pb-1">{{accessoires.name}}</div>
                 <br>
             </nuxt-link>
         </div>
@@ -23,9 +13,7 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
-import camera from '~/json/camera.json'
 import flashes from '~/json/flashes.json'
-import accessoires from '~/json/accessoires.json'
 
 export default {
   components: {
@@ -34,9 +22,7 @@ export default {
 
   data(){
     return{
-      json: camera,
       flashes: flashes,
-      accessoiress: accessoires
     }
   },
 
@@ -44,6 +30,12 @@ export default {
 </script>
 
 <style>
+
+    .flash_img {
+        max-width: none;
+        height: 250px!important;
+    }
+
 /* Sample `apply` at-rules with Tailwind CSS
 .container {
   @apply min-h-screen flex justify-center items-center text-center mx-auto;

@@ -7,16 +7,6 @@
                 <div class="text-black font-semibold text-lg overflow-hidden whitespace-no-wrap overflow-dots pb-1">{{camera.name}}</div>
                 <br>
             </nuxt-link>
-            <nuxt-link :to="'/item/flashes/' + flash.id" v-for="flash in flashes" :key="flash.id" class="w-full md:w-1/3 px-4 mb-12 no-underline">
-                <img :src="require ('@/assets/img' + flash.image[0].url)" alt="cover" width="200px">
-                <div class="text-black font-semibold text-lg overflow-hidden whitespace-no-wrap overflow-dots pb-1">{{flash.name}}</div>
-                <br>
-            </nuxt-link>
-            <nuxt-link :to="'/item/accessoires/' + accessoires.id" v-for="accessoires in accessoiress" :key="accessoires.id" class="w-full md:w-1/3 px-4 mb-12 no-underline">
-                <img :src="require ('@/assets/img' + accessoires.image[0].url)" alt="cover" width="200px">
-                <div class="text-black font-semibold text-lg overflow-hidden whitespace-no-wrap overflow-dots pb-1">{{accessoires.name}}</div>
-                <br>
-            </nuxt-link>
         </div>
     </div>
 </template>
@@ -24,8 +14,6 @@
 <script>
 import Logo from '~/components/Logo.vue'
 import camera from '~/json/camera.json'
-import flashes from '~/json/flashes.json'
-import accessoires from '~/json/accessoires.json'
 
 export default {
   components: {
@@ -35,8 +23,6 @@ export default {
   data(){
     return{
       json: camera,
-      flashes: flashes,
-      accessoiress: accessoires
     }
   },
 

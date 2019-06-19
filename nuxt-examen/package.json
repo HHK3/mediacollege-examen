@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
+    "fuse.js": "^3.4.5",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {

@@ -1,0 +1,110 @@
+[
+  {
+    "id" : 1,
+    "name" : "Nikon SB500 Speedlight flash",
+    "urlname" : "nikon-sb500-speedlight-flash",
+    "price" : 215,
+    "amount" : 1,
+    "max_flash_range" : 24,
+    "flash_range_unit" : "mm",
+    "exposure_control" : "Automatic",
+    "brand" : "Nikon",
+    "category" : "flashes",
+    "image" : [
+      {
+        "id" : 1,
+        "url" : "/flashes/nikon/888401.jpg"
+      },
+      {
+        "id" : 2,
+        "url" : "/flashes/nikon/888402.jpg"
+      },
+      {
+        "id" : 3,
+        "url" : "/flashes/nikon/888400.jpg"
+      }
+    ]
+  },
+
+  {
+    "id" : 2,
+    "name" : "Canon Speedlite 430EX III-RT",
+    "urlname" : "canon-speedlite-430ex",
+    "price" : 259,
+    "amount" : 15,
+    "max_flash_range" : 43,
+    "flash_range_unit" : "m",
+    "exposure_control" : "Automatic",
+    "brand" : "Canon",
+    "category" : "flashes",
+    "image" : [
+      {
+        "id" : 1,
+        "url" : "/flashes/canon/421097.jpg"
+      },
+      {
+        "id" : 2,
+        "url" : "/flashes/canon/421100.jpg"
+      },
+      {
+        "id" : 3,
+        "url" : "/flashes/canon/421101.jpg"
+      }
+    ]
+  },
+
+  {
+    "id" : 3,
+    "name" : "Sony HVL-F60RM",
+    "urlname" : "sony-hvl-f60rm",
+    "price" : 559,
+    "amount" : 4,
+    "max_flash_range" : 200,
+    "flash_range_unit" : "mm",
+    "exposure_control" : "Manually",
+    "brand" : "Sony",
+    "category" : "flashes",
+    "image" : [
+      {
+        "id" : 1,
+        "url" : "/flashes/sony/999254.jpg"
+      },
+      {
+        "id" : 2,
+        "url" : "/flashes/sony/1000158.jpg"
+      },
+      {
+        "id" : 3,
+        "url" : "/flashes/sony/999251.jpg"
+      }
+    ]
+  },
+
+  {
+    "id" : 4,
+    "name" : "Nikon SB-700 Speedlight Flash",
+    "urlname" : "nikon-sb-700-speedlight-flash",
+    "price" : 319,
+    "amount" : 7,
+    "max_flash_range" : 20,
+    "flash_range_unit" : "m",
+    "exposure_control" : "Automatic",
+    "brand" : "Nikon",
+    "category" : "flashes",
+    "image" : [
+      {
+        "id" : 1,
+        "url" : "/flashes/nikon2/888404.jpg"
+      },
+      {
+        "id" : 2,
+        "url" : "/flashes/nikon2/888120.jpg"
+      },
+      {
+        "id" : 3,
+        "url" : "/flashes/nikon2/888405.jpg"
+      }
+    ]
+  }
+
+]

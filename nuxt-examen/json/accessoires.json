@@ -1,0 +1,145 @@
+[
+  {
+    "id" : 1,
+    "name" : "Hama Statief Star 63",
+    "urlname" : "hama-statief-star-63",
+    "price" : 34.99,
+    "type_tripod" : "Tripod",
+    "amount" : 50,
+    "max_length" : "166 cm",
+    "max_load_weight" : 4,
+    "material" : "Aluminium",
+    "brand" : "Hama",
+    "category" : "accessoires",
+    "image" : [
+      {
+        "id" : 1,
+        "url" : "/accessoires/hama/540656.jpg"
+      },
+      {
+        "id" : 2,
+        "url" : "/accessoires/hama/423623.jpg"
+      },
+      {
+        "id" : 3,
+        "url" : "/accessoires/hama/423627.jpg"
+      }
+    ]
+  },
+
+  {
+    "id" : 2,
+    "name" : "Benro KH25N",
+    "urlname" : "benro-kh25n",
+    "price" : 159,
+    "type_tripod" : "Tripod",
+    "amount" : 12,
+    "max_length" : "155 cm",
+    "max_load_weight" : 5,
+    "material" : "Aluminium",
+    "brand" : "Benro",
+    "category" : "accessoires",
+    "image" : [
+      {
+        "id" : 1,
+        "url" : "/accessoires/benro/599534.jpg"
+      },
+      {
+        "id" : 2,
+        "url" : "/accessoires/benro/600370.jpg"
+      },
+      {
+        "id" : 3,
+        "url" : "/accessoires/benro/599533.jpg"
+      }
+    ]
+  },
+
+  {
+    "id" : 3,
+    "name" : "Joby GorillaPod 3K Kit",
+    "urlname" : "joby-gorillapod-3k-kit",
+    "price" : 89,
+    "type_tripod" : "Gorillapod",
+    "amount" : 62,
+    "max_length" : "30,5 cm",
+    "max_load_weight" : 3,
+    "material" : "Aluminium",
+    "brand" : "Joby",
+    "category" : "accessoires",
+    "image" : [
+      {
+        "id" : 1,
+        "url" : "/accessoires/joby/880414.jpg"
+      },
+      {
+        "id" : 2,
+        "url" : "/accessoires/joby/879701.jpg"
+      },
+      {
+        "id" : 3,
+        "url" : "/accessoires/joby/879696.jpg"
+      }
+    ]
+  },
+
+  {
+    "id" : 4,
+    "name" : "SanDisk SDXC Extreme 64 GB 150MB",
+    "urlname" : "sandisk-sdxc-extreme-64-gb-150mb-s",
+    "price" : 34.99,
+    "type_memory_card" : "SD",
+    "memory_card_version" : "SDXC UHS",
+    "capacity" : 64,
+    "max_read_speed" : 150,
+    "max_write_speed" : 60,
+    "brand" : "SanDisk",
+    "category" : "accessoires",
+    "image" : [
+      {
+        "id" : 1,
+        "url" : "/accessoires/sandisk/1176471.jpg"
+      }
+    ]
+  },
+  {
+    "id" : 5,
+    "name" : "Samsung microSDXC Evo+ 128 GB 100MB/s CL 10 + SD adapter",
+    "urlname" : "samsung-microsdxc-evo-128-gb",
+    "price" : 39.99,
+    "type_memory_card" : "MicroSD",
+    "memory_card_version" : "Micro SDXC",
+    "capacity" : 128,
+    "max_read_speed" : 100,
+    "max_write_speed" : 90,
+    "brand" : "Samsung",
+    "category" : "accessoires",
+    "image" : [
+      {
+        "id" : 1,
+        "url" : "/accessoires/samsung/768262.jpg"
+      }
+    ]
+  },
+
+  {
+    "id" : 6,
+    "name" : "SanDisk SDXC Extreme Pro 256 GB 170MB",
+    "urlname" : "samsung-microsdxc-evo-128-gb",
+    "price" : 129,
+    "type_memory_card" : "SD",
+    "memory_card_version" : "SDXC UHS",
+    "capacity" : 256,
+    "max_read_speed" : 170,
+    "max_write_speed" : 90,
+    "brand" : "SanDisk",
+    "category" : "accessoires",
+    "image" : [
+      {
+        "id" : 1,
+        "url" : "/accessoires/sandisk/1176491.jpg"
+      }
+    ]
+  }
+
+]

@@ -17,6 +17,10 @@ export default {
     ]
   },
 
+  router: {
+    base: '/flashit/',
+  },
+
   /*
   ** Customize the progress-bar color
   */

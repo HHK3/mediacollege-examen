@@ -11,5 +11,9 @@
     text-overflow: ellipsis;
 }
 
+.flex {
+    text-align: -webkit-center;
+}
+
 @tailwind components;
 @tailwind utilities;
