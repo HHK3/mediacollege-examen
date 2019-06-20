@@ -8,7 +8,7 @@
                 <br>
             </nuxt-link>
             <nuxt-link :to="'/item/flashes/' + flash.id" v-for="flash in flashes" :key="flash.id" class="w-full md:w-1/3 px-4 mb-12 no-underline">
-                <img :src="require ('@/assets/img' + flash.image[0].url)" alt="cover" width="200px">
+                <img :src="require ('@/assets/img' + flash.image[0].url)" alt="cover">
                 <div class="text-black font-semibold text-lg overflow-hidden whitespace-no-wrap overflow-dots pb-1">{{flash.name}}</div>
                 <br>
             </nuxt-link>
