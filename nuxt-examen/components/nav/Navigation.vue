@@ -1,21 +1,23 @@
 <template>
     <header>
 
-
-<!--        <nav class="menu">-->
-
-<!--        </nav>-->
+        <!-- Mobile Menu Toggle Button -->
         <div class="menu-btn">
             <div class="btn-line"></div>
             <div class="btn-line"></div>
             <div class="btn-line"></div>
         </div>
+
         <nav class="nav">
+
+            <!-- NAV Logo Flash It-->
             <div class="nav__logo">
                 <nuxt-link to="/" class="">
                     <img src="@/assets/img/logo/logo2.png" width="170px">
                 </nuxt-link>
             </div>
+
+            <!--NAV for Desktop -->
             <div id="mainListDiv" class="main_list nav__wrapper">
                 <ul class="navlinks nav__wrapper__list">
                     <li class="nav__wrapper__list__item">
@@ -32,32 +34,58 @@
                     </li>
                 </ul>
             </div>
+
+            <!--NAV for Mobile -->
             <div class="menu">
                 <ul class="menu-nav">
-                    <!-- Home Link -->
+
+                    <!--Home Link -->
                     <li class="nav-item">
-<!--                        <a href="#home" class="nav-link" title="Home">Home</a>-->
-                        <nuxt-link to="/" class="nav-link text-white no-underline hover:text-grey-light ml-16">Home</nuxt-link>
+                        <nuxt-link
+                            to="/"
+                            class="nav-link text-white no-underline hover:text-grey-light ml-16"
+                            title="Home Page">
+                                Home
+                        </nuxt-link>
                     </li>
-                    <!-- About Me Link -->
+
+                    <!--Shop Link -->
                     <li class="nav-item">
-<!--                        <a href="#about" class="nav-link" title="Over Mij">Over mij</a>-->
-                        <nuxt-link to="/shop" class="nav-link text-white no-underline hover:text-grey-light ml-16">Shop</nuxt-link>
+                        <nuxt-link
+                            to="/shop"
+                            class="nav-link text-white no-underline hover:text-grey-light ml-16"
+                            title="Shop Page">
+                                Shop
+                        </nuxt-link>
                     </li>
-                    <!-- My Projects Link -->
+
+                    <!--About Link -->
                     <li class="nav-item">
-<!--                        <a href="#project" class="nav-link" title="Projecten">Mijn Projecten</a>-->
-                        <nuxt-link to="/about" class="nav-link text-white no-underline hover:text-grey-light ml-16">About</nuxt-link>
+                        <nuxt-link
+                            to="/about"
+                            class="nav-link text-white no-underline hover:text-grey-light ml-16"
+                            title="About Page">
+                                About
+                        </nuxt-link>
 
                     </li>
-                    <!-- Contact Me Link -->
+
+                    <!--FAQ Link -->
                     <li class="nav-item">
-<!--                        <a href="#contact" class="nav-link" title="Contact Opnemen">Contact Opnemen</a>-->
-                        <nuxt-link to="/faq" class="nav-link text-white no-underline hover:text-grey-light ml-16">FAQ</nuxt-link>
+                        <nuxt-link
+                            to="/faq"
+                            class="nav-link text-white no-underline hover:text-grey-light ml-16"
+                            title="FAQ Page">
+                                FAQ
+                        </nuxt-link>
                     </li>
+
                 </ul>
+
             </div>
+
         </nav>
+
     </header>
 </template>
 
@@ -70,14 +98,11 @@
         head () {
             return {
                 script: [
+                    { src: 'navbar.js' },
                     { src: 'navbar2.js' , body: true}
                 ],
             }
         },
-
-        // mounted() {
-
-
     }
 
 
@@ -102,11 +127,6 @@
         padding-bottom: 20px;
         -webkit-transition: all 0.8s ease-in-out;
         transition: all 0.8s ease-in-out;
-    }
-
-    .highlight {
-        padding: 0;
-        background-color: #111;
     }
 
     .nav__logo {
@@ -267,9 +287,9 @@
         .menu .nav-link {
             display: inline-block;
             position: relative;
-            font-size: 30px;
+            font-size: 80px;
             text-transform: uppercase;
-            padding: 1rem 0;
+            padding: 2.5rem 0;
             font-weight: 300;
             color: #fff;
             text-decoration: none;
@@ -312,9 +332,11 @@
             transition-delay: 0.4s;
         }
 
-        @media screen and (max-width: 500px) {
-            .menu .m1 {
-                font-size: 20px;
+        @media screen and (max-width: 762px) {
+
+            .menu .nav-link {
+                font-size: 50px;
+                padding: 1.5rem 0;
             }
 
             @media screen and (max-width: 480px) {
@@ -322,10 +344,20 @@
                     font-size: 1.6rem;
                 }
 
-                @media screen and (max-width: 320px) {
-                    .menu .m1 {
-                        font-size: 13px;
+                .menu .nav-link {
+                    font-size: 35px;
+                    padding: 1rem 0;
+                }
+
+                @media screen and (max-width: 350px) {
+                    .menu .nav-link {
+                        font-size: 30px;
                     }
+
+                    .menu-nav {
+                        height: 107vh;
+                    }
+
                 }
 
             }

@@ -84,7 +84,7 @@ body.no_scroll {
         grid-template-columns: 1fr 1fr;
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 762px) {
         .item-container {
             grid-template-columns: 1fr;
         }

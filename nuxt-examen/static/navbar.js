@@ -1,8 +1,6 @@
 $(document).ready(function() {
 
     $(".nav-link, .nav__logo").on("click", function(event) {
-        console.log("AYY");
-
         // Closing the Menu Down
         $("div.menu-btn").removeClass("close");
         $("nav.menu").removeClass("show");
