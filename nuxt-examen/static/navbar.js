@@ -1,0 +1,28 @@
+$(document).ready(function() {
+
+    $(".nav-link, .nav__logo").on("click", function(event) {
+        console.log("AYY");
+
+        // Closing the Menu Down
+        $("div.menu-btn").removeClass("close");
+        $("nav.menu").removeClass("show");
+        $("div.menu-profilepic").removeClass("show");
+        $("ul.menu-nav").removeClass("show");
+        $("li.nav-item").removeClass("show");
+
+        showMenu = false;
+    });
+
+    $(window).resize(function(){
+        if ($(window).width() >= 1120){
+            $("div.menu-btn").removeClass("close");
+            $("nav.menu").removeClass("show");
+            $("div.menu-profilepic").removeClass("show");
+            $("ul.menu-nav").removeClass("show");
+            $("li.nav-item").removeClass("show");
+
+            showMenu = false;
+        }
+    });
+
+});

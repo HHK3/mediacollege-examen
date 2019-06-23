@@ -7,12 +7,88 @@
     opacity: 0;
 }
 
+body.no_scroll {
+    overflow: hidden!important;
+}
+
 .overflow-dots {
     text-overflow: ellipsis;
 }
 
+.item {
+    padding: 10px 15px 10px 15px;
+    background: white;
+}
+
 .flex {
     text-align: -webkit-center;
+}
+
+.camera {
+    /*width: 348px!important;*/
+    /*height: 183px!important;*/
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+
+}
+
+.camera2 {
+    /*width: 348px!important;*/
+    /*height: 250px!important*/
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+}
+
+.flashes {
+    /*width: 183px!important;*/
+    /*height: 313px!important;*/
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+}
+
+.tripod {
+    /*width: 200px!important;*/
+    /*height: 300px!important;*/
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+}
+
+.sd-card {
+    /*width: 155px!important;*/
+    /*height: 204px!important;*/
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+}
+
+.sd-card1 {
+    /*width: 240px!important;*/
+    /*height: 204px!important;*/
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+}
+
+.item-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: -webkit-center;
+}
+
+@media screen and (max-width: 1120px) {
+    .item-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 500px) {
+        .item-container {
+            grid-template-columns: 1fr;
+        }
+    }
 }
 
 @tailwind components;

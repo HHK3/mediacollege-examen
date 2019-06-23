@@ -1,9 +1,10 @@
 <template>
     <div class="container mx-auto">
+        <h1>{{ json[$route.params.id - 1].name }}</h1>
         <img :src="require ('@/assets/img' + json[$route.params.id - 1].image[0].url)" alt="cover" width="300px">
         {{ json[$route.params.id - 1].id }}
         <br>
-        {{ json[$route.params.id - 1].name }}
+
     </div>
 </template>
 

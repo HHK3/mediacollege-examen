@@ -1,8 +1,8 @@
 <template>
-    <div class="container mx-auto py-16">
+    <div class="container mx-auto py-32">
         <h1 class="font-heading uppercase mb-8">Popular Cameras</h1>
         <div class="item-container flex flex-wrap -mx-4">
-            <nuxt-link :to="'/item/camera/' + camera.id" v-for="camera in json" :key="camera.id" class="w-full md:w-1/3 px-4 mb-12 no-underline">
+            <nuxt-link :to="'/shop/camera/' + camera.id" v-for="camera in json" :key="camera.id" class="w-full md:w-1/3 px-4 mb-12 no-underline">
                 <img :src="require ('@/assets/img' + camera.image[0].url)" alt="cover" width="300px">
                 <div class="text-black font-semibold text-lg overflow-hidden whitespace-no-wrap overflow-dots pb-1">{{camera.name}}</div>
                 <br>
@@ -16,15 +16,22 @@ import Logo from '~/components/Logo.vue'
 import camera from '~/json/camera.json'
 
 export default {
-  components: {
-    Logo
-  },
+    components: {
+        Logo
+    },
 
-  data(){
-    return{
-      json: camera,
+    data(){
+        return{
+          json: camera,
+        }
+    },
+
+    methods: {
+        async hoverChange() {
+            document.getElementById().src = "";
+        }
+
     }
-  },
 
 }
 </script>

@@ -11,6 +11,7 @@
     "level" : "Beginner",
     "brand" : "Canon",
     "category" : "camera",
+    "class" : "camera",
     "image" : [
       {
         "id" : 1,
@@ -39,6 +40,7 @@
     "level" : "Beginner",
     "brand" : "Lumix",
     "category" : "camera",
+    "class" : "camera",
     "image" : [
       {
         "id" : 1,
@@ -67,6 +69,7 @@
     "level" : "Beginner",
     "brand" : "Polaroid",
     "category" : "camera",
+    "class" : "camera",
     "image" : [
       {
         "id" : 1,
@@ -95,6 +98,7 @@
     "level" : "Kids",
     "brand" : "Vtech",
     "category" : "camera",
+    "class" : "camera",
     "image" : [
       {
         "id" : 1,
@@ -122,6 +126,7 @@
     "level" : "Advanced",
     "brand" : "Nikon",
     "category" : "camera",
+    "class" : "camera",
     "image" : [
       {
         "id" : 1,
@@ -150,6 +155,7 @@
     "level" : "Advanced",
     "brand" : "Lumix",
     "category" : "camera",
+    "class" : "camera",
     "image" : [
       {
         "id" : 1,
@@ -178,6 +184,7 @@
     "level" : "Advanced",
     "brand" : "Sony",
     "category" : "camera",
+    "class" : "camera",
     "image" : [
       {
         "id" : 1,
@@ -206,6 +213,7 @@
     "level" : "Expert",
     "brand" : "Sony",
     "category" : "camera",
+    "class" : "camera",
     "image" : [
       {
         "id" : 1,
@@ -234,6 +242,7 @@
     "level" : "Expert",
     "brand" : "Sony",
     "category" : "camera",
+    "class" : "camera",
     "image" : [
       {
         "id" : 1,
@@ -262,6 +271,7 @@
     "level" : "Expert",
     "brand" : "Canon",
     "category" : "camera",
+    "class" : "camera2",
     "image" : [
       {
         "id" : 1,

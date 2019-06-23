@@ -10,6 +10,7 @@
     "exposure_control" : "Automatic",
     "brand" : "Nikon",
     "category" : "flashes",
+    "class" : "flashes",
     "image" : [
       {
         "id" : 1,
@@ -37,6 +38,7 @@
     "exposure_control" : "Automatic",
     "brand" : "Canon",
     "category" : "flashes",
+    "class" : "flashes",
     "image" : [
       {
         "id" : 1,
@@ -64,6 +66,7 @@
     "exposure_control" : "Manually",
     "brand" : "Sony",
     "category" : "flashes",
+    "class" : "flashes",
     "image" : [
       {
         "id" : 1,
@@ -91,6 +94,7 @@
     "exposure_control" : "Automatic",
     "brand" : "Nikon",
     "category" : "flashes",
+    "class" : "flashes",
     "image" : [
       {
         "id" : 1,
