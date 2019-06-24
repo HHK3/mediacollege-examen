@@ -11,6 +11,7 @@
     "material" : "Aluminium",
     "brand" : "Hama",
     "category" : "accessoires",
+    "type" : "Tripod",
     "class" : "tripod",
     "image" : [
       {
@@ -40,6 +41,7 @@
     "material" : "Aluminium",
     "brand" : "Benro",
     "category" : "accessoires",
+    "type" : "Tripod",
     "class" : "tripod",
     "image" : [
       {
@@ -69,6 +71,7 @@
     "material" : "Aluminium",
     "brand" : "Joby",
     "category" : "accessoires",
+    "type" : "Tripod",
     "class" : "tripod",
     "image" : [
       {
@@ -98,6 +101,7 @@
     "max_write_speed" : 60,
     "brand" : "SanDisk",
     "category" : "accessoires",
+    "type" : "SD-Card",
     "class" : "sd-card",
     "image" : [
       {
@@ -118,6 +122,7 @@
     "max_write_speed" : 90,
     "brand" : "Samsung",
     "category" : "accessoires",
+    "type" : "Sd-Card",
     "class" : "sd-card1",
     "image" : [
       {
@@ -139,6 +144,7 @@
     "max_write_speed" : 90,
     "brand" : "SanDisk",
     "category" : "accessoires",
+    "type" : "SD-Card",
     "class" : "sd-card",
     "image" : [
       {

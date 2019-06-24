@@ -29,9 +29,6 @@
                     <li class="nav__wrapper__list__item">
                         <nuxt-link to="/about" class="text-white no-underline hover:text-grey-light ml-16">About</nuxt-link>
                     </li>
-                    <li class="nav__wrapper__list__item">
-                        <nuxt-link to="/faq" class="text-white no-underline hover:text-grey-light ml-16">FAQ</nuxt-link>
-                    </li>
                 </ul>
             </div>
 
@@ -68,16 +65,6 @@
                                 About
                         </nuxt-link>
 
-                    </li>
-
-                    <!--FAQ Link -->
-                    <li class="nav-item">
-                        <nuxt-link
-                            to="/faq"
-                            class="nav-link text-white no-underline hover:text-grey-light ml-16"
-                            title="FAQ Page">
-                                FAQ
-                        </nuxt-link>
                     </li>
 
                 </ul>
@@ -355,7 +342,7 @@
                     }
 
                     .menu-nav {
-                        height: 107vh;
+                        height: 82vh;
                     }
 
                 }

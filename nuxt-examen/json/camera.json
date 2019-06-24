@@ -11,6 +11,7 @@
     "level" : "Beginner",
     "brand" : "Canon",
     "category" : "camera",
+    "type" : "Camera",
     "class" : "camera",
     "image" : [
       {
@@ -40,6 +41,7 @@
     "level" : "Beginner",
     "brand" : "Lumix",
     "category" : "camera",
+    "type" : "Camera",
     "class" : "camera",
     "image" : [
       {
@@ -69,6 +71,7 @@
     "level" : "Beginner",
     "brand" : "Polaroid",
     "category" : "camera",
+    "type" : "Camera",
     "class" : "camera",
     "image" : [
       {
@@ -98,6 +101,7 @@
     "level" : "Kids",
     "brand" : "Vtech",
     "category" : "camera",
+    "type" : "Camera",
     "class" : "camera",
     "image" : [
       {
@@ -126,6 +130,7 @@
     "level" : "Advanced",
     "brand" : "Nikon",
     "category" : "camera",
+    "type" : "Camera",
     "class" : "camera",
     "image" : [
       {
@@ -155,6 +160,7 @@
     "level" : "Advanced",
     "brand" : "Lumix",
     "category" : "camera",
+    "type" : "Camera",
     "class" : "camera",
     "image" : [
       {
@@ -184,6 +190,7 @@
     "level" : "Advanced",
     "brand" : "Sony",
     "category" : "camera",
+    "type" : "Camera",
     "class" : "camera",
     "image" : [
       {
@@ -213,6 +220,7 @@
     "level" : "Expert",
     "brand" : "Sony",
     "category" : "camera",
+    "type" : "Camera",
     "class" : "camera",
     "image" : [
       {
@@ -232,35 +240,6 @@
 
   {
     "id" : 9,
-    "name" : "Sony Cybershot DSC-RX100 VI",
-    "urlname" : "sony-cybershot-dsc-rx100-vi",
-    "price" : 1169,
-    "color" : "Black",
-    "amount" : 39,
-    "megapixels" : 20.1,
-    "screen_sensor" : "1\"",
-    "level" : "Expert",
-    "brand" : "Sony",
-    "category" : "camera",
-    "class" : "camera",
-    "image" : [
-      {
-        "id" : 1,
-        "url" : "/camera/sony_cybershot_dsc_rx100_vi/1062824.jpg"
-      },
-      {
-        "id" : 2,
-        "url" : "/camera/sony_cybershot_dsc_rx100_vi/1062821.jpg"
-      },
-      {
-        "id" : 3,
-        "url" : "/camera/sony_cybershot_dsc_rx100_vi/1068367.jpg"
-      }
-    ]
-  },
-
-  {
-    "id" : 10,
     "name" : "Canon EOS 5D Mark IV Body",
     "urlname" : "canon-eos-5d-mark-iv-body",
     "price" : 3179,
@@ -271,6 +250,7 @@
     "level" : "Expert",
     "brand" : "Canon",
     "category" : "camera",
+    "type" : "Camera",
     "class" : "camera2",
     "image" : [
       {

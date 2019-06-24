@@ -21,6 +21,7 @@ body.no_scroll {
 }
 
 .flex {
+    padding: 0;
     text-align: -webkit-center;
 }
 

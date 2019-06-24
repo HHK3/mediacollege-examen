@@ -5,7 +5,7 @@
             <div class="filters">
                 <div class="flexFilter">
                     <div class="search">
-                        <h3>Search for booze</h3>
+                        <h3>Search Products</h3>
                         <input type="text" placeholder="Ex. Nikon" v-model="search"  @input="productsFilter()"/>
                     </div>
                     <div class="type">
@@ -17,7 +17,7 @@
                         </select>
                     </div>
                     <div class="price">
-                        <h3>Max Price</h3>
+                        <h3>Max. Price</h3>
                         <div>
                             <p v-text="min"/>
                             <input @input="productsFilter()" type="range" v-model="price" :min="Math.ceil(min)" :max="Math.ceil(max)" class="slider">
@@ -45,11 +45,12 @@
 <!--                        <div v-if="allergies !== 'None'">Allergies: {{allergies}}<a @click="allergies='None'"><icon class="close" icon="times-circle" /></a></div>-->
                     </div>
                 </div>
+
             </div>
 
-            <div class="boozelist">
+            <div class="flex">
                 <div class="results" v-if="products.length">
-                    <span>got {{products.length}} results</span>
+                    <span>{{products.length}} results found!</span>
                     <select v-model="order" @input="productsFilter()" style="color: black; border: 2px solid black">
                         <option value="0">Alphabetical order</option>
                         <option value="1">Search</option>
@@ -59,17 +60,21 @@
                 </div>
 
                 <div class="results noResults" v-else>No results found with those filters</div>
+            </div>
+
+
+            <div class="boozelist">
 
 <!--                :class="'bg-' + booze.type"-->
                 <div class="booze"  v-for="product in products">
 <!--                    <icon class="icon" :class="'icon-' + booze.type" :icon="getIcon(booze.type)"></icon>-->
 <!--                    <img class="brand" :src="require(`@/assets/brands/${booze.brand.toLowerCase()}.png`)">-->
-                    <img :src="require ('@/assets/img' + product.image[0].url)" alt="cover" :class="product.class">
+                    <img :src="require ('@/assets/img' + product.image[0].url)" :alt="product.name" :title="product.brand + ' ' + product.type" :class="product.class + ' testert'" >
 
                     <div class="product_text">
-                        <p>{{product.name}}</p>
+                        <h3>{{product.name}}</h3>
                         <span class="boozePrice">{{product.price}}</span>
-                        <nuxt-link :to="'/shop/' + product.category + '/' + product.id" class="noDec">
+                        <nuxt-link :to="'/shop/' + product.category + '/' + product.id" :title="'Product Page ' + product.name" class="noDec">
                             <h1>Kopen</h1>
                         </nuxt-link>
                     </div>
@@ -243,7 +248,15 @@
         --radius: 5px;
     }
 
+    .grid {
+        width: 65vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .results{
+        border: 2px solid black;
         width: 100%;
         background: #226622;
         color: white;
@@ -256,26 +269,28 @@
         justify-content: stretch;
     }
     .results > span{
-        padding: 15px;
-        min-width: max-content;
         flex: 1;
     }
     .results > select{
         border-radius: 0 15px 15px 0;
         height: 100%;
-        padding: 15px;
-        min-width: max-content;
     }
     .noResults{
         background: #662222;
     }
-    .boozelist{
-        display: flex;
-        justify-content: stretch;
-        flex-wrap: wrap;
-        background: var(--midtone);
-        grid-column: span 6;
+
+    .testert {
+        padding: 15px;
     }
+
+    .boozelist{
+        display: grid;
+        /*justify-content: stretch;*/
+        grid-template-columns: 1fr 1fr 1fr;
+        background: var(--midtone);
+        /*grid-column: span 6;*/
+    }
+
     .boozePrice{
         width: max-content;
         margin-left: auto;
@@ -286,13 +301,9 @@
         border-radius: 20px;
         text-align: -webkit-center;
         margin: 15px;
-        min-width: -webkit-max-content;
-        min-width: -moz-max-content;
-        min-width: max-content;
-        flex: 1;
         /* height: 150px; */
         /* position: sticky; */
-        padding: 25px;
+        /*padding: 25px;*/
         background: white;
         color: var(--dark);
     }
@@ -308,6 +319,7 @@
 
     .product_text {
         text-align: left;
+        padding-left: 12px;
     }
 
     .filterTitle{
@@ -429,31 +441,76 @@
         opacity: 0.75;
         background: var(--light);
     }
-    @media (max-width: 550px){
-        .filters,.boozelist{
-            margin: 0 -15px;
+
+    @media screen and (max-width: 1650px) {
+        .boozelist {
+            grid-template-columns: 1fr 1fr;
         }
-        .boozelist{
-            justify-content: center;
-            margin-top: -15px;
-        }
-        .booze{
-            width: 100%;
-            margin: 5px;
-            max-width: 100%;
-        }
-        .noDec{
-            margin-top: 32px;
-            margin-bottom: 5px;
-        }
-        .flexFilter{
-            flex-direction: column;
-        }
-        .search,.type,.price,.allergies{
-            padding-right: 15px;
-            width: 100%;
-            min-width: 0;
-            max-width: 100%;
+
+        @media screen and (max-width: 1366px) {
+            .grid {
+                width: 95vw;
+            }
+
+            .boozelist {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            @media screen and (max-width: 1000px) {
+
+                .boozelist {
+                    grid-template-columns: 1fr 1fr;
+                }
+
+
+                @media screen and (max-width: 600px) {
+
+                    .boozelist {
+                        grid-template-columns: 1fr;
+                    }
+
+                    @media screen and (max-width: 550px) {
+                        .noDec {
+                            margin-top: 32px;
+                            margin-bottom: 5px;
+                        }
+
+                        .flexFilter {
+                            flex-direction: column;
+                        }
+
+                        .search, .type, .price, .allergies {
+                            padding-right: 15px;
+                            width: 100%;
+                            min-width: 0;
+                            max-width: 100%;
+                        }
+
+                        @media screen and (max-width: 450px) {
+                            .booze {
+                                max-width: 100%;
+                            }
+
+                            .product_text {
+                                float: left;
+                            }
+
+                            .tripod {
+                                max-width: 150px;
+                            }
+
+                            .camera {
+                                max-width: 260px;
+                            }
+
+                        }
+
+                    }
+                }
+            }
         }
     }
+
+
+
 </style>
