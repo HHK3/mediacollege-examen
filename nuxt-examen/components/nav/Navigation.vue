@@ -129,10 +129,6 @@
         font-size: 2rem;
     }
 
-    .nav__logo a:hover {
-        color: #00E676;
-    }
-
     .nav__wrapper {
         height: 65px;
         float: right;
@@ -163,7 +159,9 @@
         font-size: 1.8rem;
     }
 
-    .nav__wrapper__list__item a:hover {
+    .nav__wrapper__list__item a:hover,
+    .nav__wrapper__list__item a:active,
+    .nav__wrapper__list__item a.nuxt-link-exact-active  {
         color: #00F676;
     }
 
@@ -283,8 +281,10 @@
             transition: all 1s ease-out;
         }
 
-        .menu .nav-link:hover {
-            color: #eece1a;
+        .menu .nav-link:hover,
+        .menu .nav-link:active,
+        .menu .nav-link.nuxt-link-exact-active {
+            color: #00F676;
         }
 
 

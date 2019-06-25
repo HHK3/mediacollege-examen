@@ -13,6 +13,7 @@
     "category" : "camera",
     "type" : "Camera",
     "class" : "camera",
+    "keywords" : "canon, camera, aps-c, canon eos m50, canon camera, cameras",
     "image" : [
       {
         "id" : 1,
@@ -43,6 +44,7 @@
     "category" : "camera",
     "type" : "Camera",
     "class" : "camera",
+    "keywords" : "panasonic, lumix, panasonic lumix, camera, 1/2.3, panasonic lumix dmc, panasonic camera, lumix camera",
     "image" : [
       {
         "id" : 1,
@@ -73,6 +75,7 @@
     "category" : "camera",
     "type" : "Camera",
     "class" : "camera",
+    "keywords" : "polaroid, camera, 1/3.5, polaroid snap touch instant, polaroid camera, cameras",
     "image" : [
       {
         "id" : 1,
@@ -103,6 +106,7 @@
     "category" : "camera",
     "type" : "Camera",
     "class" : "camera",
+    "keywords" : "vtech, kidizoom, camera, cmos, vtech kidizoom duo 5, vtech camera, vtech kidizoom camera, cameras",
     "image" : [
       {
         "id" : 1,
@@ -132,6 +136,7 @@
     "category" : "camera",
     "type" : "Camera",
     "class" : "camera",
+    "keywords" : "nikon, camera, 1/2.3, nikon coolpix p900, nikon camera, cameras",
     "image" : [
       {
         "id" : 1,
@@ -162,6 +167,7 @@
     "category" : "camera",
     "type" : "Camera",
     "class" : "camera",
+    "keywords" : "panasonic, lumix, panasonic lumix, camera, micro four thirds, panasonic lumix dmc, panasonic camera, lumix camera",
     "image" : [
       {
         "id" : 1,
@@ -192,6 +198,7 @@
     "category" : "camera",
     "type" : "Camera",
     "class" : "camera",
+    "keywords" : "sony, camera, aps-c, sony alpha a6400, sony camera, cameras",
     "image" : [
       {
         "id" : 1,
@@ -222,6 +229,7 @@
     "category" : "camera",
     "type" : "Camera",
     "class" : "camera",
+    "keywords" : "sony, camera, full frame, sony alpha a7iii, sony camera, cameras",
     "image" : [
       {
         "id" : 1,
@@ -252,6 +260,7 @@
     "category" : "camera",
     "type" : "Camera",
     "class" : "camera2",
+    "keywords" : "canon, camera, full frame, canon eos 5d mark iv, canon camera, cameras",
     "image" : [
       {
         "id" : 1,

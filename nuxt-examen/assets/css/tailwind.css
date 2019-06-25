@@ -92,5 +92,9 @@ body.no_scroll {
     }
 }
 
+.py-30 {
+    padding-top: 6.6rem;
+}
+
 @tailwind components;
 @tailwind utilities;

@@ -1,20 +1,13 @@
 <template>
-    <section>
-
+    <section class="mx-auto py-32">
         <div class="grid">
+
             <div class="filters">
+
                 <div class="flexFilter">
                     <div class="search">
                         <h3>Search Products</h3>
                         <input type="text" placeholder="Ex. Nikon" v-model="search"  @input="productsFilter()"/>
-                    </div>
-                    <div class="type">
-                        <h3>Categories</h3>
-                        <select v-model="category" @input="productsFilter()">
-                            <option value="camera">Cameras</option>
-                            <option value="flashes">Flashes</option>
-                            <option value="accessoires">Accessoires</option>
-                        </select>
                     </div>
                     <div class="price">
                         <h3>Max. Price</h3>
@@ -24,25 +17,13 @@
                             <p v-text="max"/>
                         </div>
                     </div>
-<!--                    <div class="allergies">-->
-<!--                        <h3>Allergies</h3>-->
-<!--                        <select v-model="allergies"  @input="filterBoozes()">-->
-<!--                            <option value="None">None</option>-->
-<!--                            <option value="Gluten">Gluten</option>-->
-<!--                            <option value="Milk">Milk</option>-->
-<!--                            <option value="Nuts">Nuts</option>-->
-<!--                            <option value="Pip/Stone fruit">Pip/Stone fruit</option>-->
-<!--                        </select>-->
-<!--                    </div>-->
                 </div>
 
                 <div v-if="price < max || search.length || category !== 'All' ">
                     <h3 class="filterTitle"> Filtering on:</h3>
                     <div class="activeFilters">
-                        <div v-if="price < max">Max price: €{{price}} <a @click="price=max"></a></div>
-                        <div v-if="search.length">Name contains: {{search}} <a @click="search=''"></a></div>
-                        <div v-if="category !== 'All'">Category of booze: {{category}} <a @click="category='All'"></a></div>
-<!--                        <div v-if="allergies !== 'None'">Allergies: {{allergies}}<a @click="allergies='None'"><icon class="close" icon="times-circle" /></a></div>-->
+                        <div class="filtert" v-if="price < max">Max price: €{{price}}</div>
+                        <div class="filtert" v-if="search.length">Search contains: {{search}}</div>
                     </div>
                 </div>
 
@@ -51,11 +32,9 @@
             <div class="flex">
                 <div class="results" v-if="products.length">
                     <span>{{products.length}} results found!</span>
-                    <select v-model="order" @input="productsFilter()" style="color: black; border: 2px solid black">
-                        <option value="0">Alphabetical order</option>
+                    <select v-model="order" @input="productsFilter()" style="color: black;">
+                        <option value="0">Alphabetical</option>
                         <option value="1">Search</option>
-                        <option value="2">Highest price</option>
-                        <option value="3">Lowest price</option>
                     </select>
                 </div>
 
@@ -63,17 +42,13 @@
             </div>
 
 
-            <div class="boozelist">
-
-<!--                :class="'bg-' + booze.type"-->
-                <div class="booze"  v-for="product in products">
-<!--                    <icon class="icon" :class="'icon-' + booze.type" :icon="getIcon(booze.type)"></icon>-->
-<!--                    <img class="brand" :src="require(`@/assets/brands/${booze.brand.toLowerCase()}.png`)">-->
-                    <img :src="require ('@/assets/img' + product.image[0].url)" :alt="product.name" :title="product.brand + ' ' + product.type" :class="product.class + ' testert'" >
+            <div class="productList">
+                <div class="product"  v-for="product in products">
+                    <img :src="require ('~/assets/img' + product.image[0].url)" :alt="product.brand + ' ' + product.type " :title="product.name" :class="product.class + ' testert'" >
 
                     <div class="product_text">
                         <h3>{{product.name}}</h3>
-                        <span class="boozePrice">{{product.price}}</span>
+                        <span class="productPrice">{{product.price}}</span>
                         <nuxt-link :to="'/shop/' + product.category + '/' + product.id" :title="'Product Page ' + product.name" class="noDec">
                             <h1>Kopen</h1>
                         </nuxt-link>
@@ -126,7 +101,7 @@
                 products: [],
                 fuse: '',
                 min: 4.49,
-                max: 3000.99,
+                max: 3179,
                 price: 150,
                 search: '',
                 category: 'All',
@@ -138,7 +113,7 @@
                     maxPatternLength: 32,
                     minMatchCharLength: 1,
                     keys: [
-                        "name"
+                        "name",
                     ]
                 }
             }
@@ -171,6 +146,7 @@
                 }
                 return { x: parseInt(x, 10), y: parseInt(y, 10) };
             },
+
             async productsFilter(){
                 let products = await this.allProducts;
                 if (this.search.length) {
@@ -182,10 +158,6 @@
                     products = products.filter(b => b.category.toLowerCase() === this.category.toLowerCase())
                 }
 
-                // if (this.allergies !== 'None') {
-                //     products = products.filter(b => b.allergies.toLowerCase() !== this.allergies.toLowerCase())
-                // }
-
                 switch(this.order.toString()) {
                     case '0':
                         //Alphabetical
@@ -193,6 +165,7 @@
                         for (let i = 0; i < products.length; i++){
                             arr.push(products[i].name)
                         }
+
                         arr.sort();
                         let newProducts = [];
                         for (let i = 0; i < arr.length; i++){
@@ -201,17 +174,17 @@
                         }
                         products = newProducts;
                         break;
+
                     case '1':
                         //Search
-                        //do nothing
                         break;
                     case '2':
                         //Highest price
-                        this.order = 1;
+                        this.order = 2;
                         break;
                     case '3':
                         //Lowerst price
-                        this.order = 1;
+                        this.order = 3;
                         break;
                 }
                 products = products.filter(b => b.price < this.price);
@@ -223,22 +196,9 @@
 </script>
 
 <style scoped>
-    .close{
-        transform: scale(1.5);
-        margin: 0 7px;
-        color: var(--alt);
-    }
-    .brand{
-        width: 50px;
-        height: 50px;
-        bottom: 0px;
-        right: 0px;
-        border-radius: 25px;
-        position: absolute;
-    }
+
     section{
         position: relative;
-        background: var(--alt);
         /*background-image: url('https://therealbarman.com/wp-content/uploads/2018/08/Bar-Background.png');*/
         background-image: url('https://picsum.photos/1080/720?random=2&blur=3');
         background-attachment: fixed;
@@ -253,6 +213,9 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        background: #3b8070;
+
+        border-radius: 30px;
     }
 
     .results{
@@ -268,51 +231,54 @@
         align-items: center;
         justify-content: stretch;
     }
+
     .results > span{
         flex: 1;
     }
+
     .results > select{
         border-radius: 0 15px 15px 0;
         height: 100%;
     }
+
     .noResults{
-        background: #662222;
+        background: red;
     }
 
     .testert {
         padding: 15px;
     }
 
-    .boozelist{
-        display: grid;
-        /*justify-content: stretch;*/
-        grid-template-columns: 1fr 1fr 1fr;
-        background: var(--midtone);
-        /*grid-column: span 6;*/
+    .filtert {
+        font-weight: bolder;
     }
 
-    .boozePrice{
+    .productList{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .productPrice{
         width: max-content;
         margin-left: auto;
     }
 
-    .booze{
+    .product{
         font-size: 18px;
         border-radius: 20px;
         text-align: -webkit-center;
         margin: 15px;
-        /* height: 150px; */
-        /* position: sticky; */
-        /*padding: 25px;*/
         background: white;
-        color: var(--dark);
     }
-    .booze > p, .booze > span{
+
+    .product > p, .product > span{
         z-index: 5;
     }
-    .boozePrice:before{
+
+    .productPrice:before{
         content: '€';
     }
+
     .noDec{
         padding-right: 35px;
     }
@@ -326,59 +292,57 @@
         margin-left: 15px;
         color: white;
     }
+
     .activeFilters{
         padding: 7.5px;
-        border-radius: var(--radius);
         margin: 0 15px 15px;
-        background: var(--background);
+        background: white;
+        border-radius: 5px;
+
     }
+
     .activeFilters > div{
         margin-right: 5px;
         display: inline-block;
-        background: var(--light);
         width: max-content;
         padding: 7.5px;
         border-radius: 5px;
+        background: lightskyblue;
     }
     .filters{
-        background: var(--dark);
-        margin-top: 25px;
         grid-column: span 6;
     }
+
     .search, .type, .price, .allergies{
         color: white;
         margin: 7.5px;
         min-width: 500px;
-        border-radius: var(--radius);
         flex: 1;
         max-width: 100%;
     }
-    .type, .allergies{
-        min-width: 250px;
-        max-width: 100%;
-    }
+
     .type{
         min-width: 200px;
     }
+
     h3{
         font-weight: initial !important;
     }
+
     .search > input, .type > select, .allergies > select, .price > div{
         padding: 15px;
         color: black;
         background: white;
         width: 100%;
-        border-radius: var(--radius);
+        border-radius: 5px;
         font-size: 18px;
     }
-    input, select{
-        border: 2px var(--midtone) solid;
-    }
+
     input:focus,select:focus{
         outline: none;
         border-color: dodgerblue;
-
     }
+
     .price > div{
         justify-content: stretch;
         align-items: center;
@@ -397,7 +361,7 @@
         margin-left: 15px;
     }
     .slider {
-        border-radius: var(--radius);
+        border-radius: 5px;
         flex: 1;
         -webkit-appearance: none;
         width: 100%;
@@ -405,10 +369,13 @@
         background: none;
         outline: none;
         transition: .2s;
+        background: lightblue;
     }
+
     .slider:focus,.slider:hover{
         height: 25px;
     }
+
     .slider::-webkit-slider-thumb {
         -webkit-appearance: none;
         transition: .2s ease-in-out;
@@ -416,15 +383,16 @@
         width: 15px;
         height: 15px;
         border-radius: 100%;
-        background: var(--alt);
+        background: green;
         cursor: pointer;
     }
+
     .slider:hover::-webkit-slider-thumb, .slider:focus::-webkit-slider-thumb {
         height: 25px;
         width: 7px;
         border-radius: 20%;
-        background: var(--dark);
     }
+
     .flexFilter{
         flex-wrap: wrap;
         padding: 7.5px;
@@ -432,18 +400,9 @@
         display: flex;
         justify-content: stretch;
     }
-    .bg-overlay{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0.75;
-        background: var(--light);
-    }
 
     @media screen and (max-width: 1650px) {
-        .boozelist {
+        .productList {
             grid-template-columns: 1fr 1fr;
         }
 
@@ -452,20 +411,20 @@
                 width: 95vw;
             }
 
-            .boozelist {
+            .productList {
                 grid-template-columns: 1fr 1fr 1fr;
             }
 
             @media screen and (max-width: 1000px) {
 
-                .boozelist {
+                .productList {
                     grid-template-columns: 1fr 1fr;
                 }
 
 
                 @media screen and (max-width: 600px) {
 
-                    .boozelist {
+                    .productList {
                         grid-template-columns: 1fr;
                     }
 
@@ -487,7 +446,7 @@
                         }
 
                         @media screen and (max-width: 450px) {
-                            .booze {
+                            .product {
                                 max-width: 100%;
                             }
 

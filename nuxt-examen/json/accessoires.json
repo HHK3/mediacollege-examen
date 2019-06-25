@@ -1,8 +1,8 @@
 [
   {
     "id" : 1,
-    "name" : "Hama Statief Star 63",
-    "urlname" : "hama-statief-star-63",
+    "name" : "Hama Tripod Star 63",
+    "urlname" : "hama-tripod-star-63",
     "price" : 34.99,
     "type_tripod" : "Tripod",
     "amount" : 50,
@@ -13,6 +13,7 @@
     "category" : "accessoires",
     "type" : "Tripod",
     "class" : "tripod",
+    "keywords" : "hama, tripod, hama tripod star 63, hama tripod, accessoires",
     "image" : [
       {
         "id" : 1,
@@ -43,6 +44,7 @@
     "category" : "accessoires",
     "type" : "Tripod",
     "class" : "tripod",
+    "keywords" : "benro, tripod, benro kh25n, benro tripod, accessoires",
     "image" : [
       {
         "id" : 1,
@@ -73,6 +75,7 @@
     "category" : "accessoires",
     "type" : "Tripod",
     "class" : "tripod",
+    "keywords" : "joby, tripod, gorillapod, joby gorillapod 3k kit, joby gorillapod, joby tripod, accessoires",
     "image" : [
       {
         "id" : 1,
@@ -103,6 +106,7 @@
     "category" : "accessoires",
     "type" : "SD-Card",
     "class" : "sd-card",
+    "keywords" : "sandisk, sd-card, sdxc, sandisk sdhx extreme 64gb, sandisk sd-card, sandisk sdhx, accessoires",
     "image" : [
       {
         "id" : 1,
@@ -124,6 +128,7 @@
     "category" : "accessoires",
     "type" : "Sd-Card",
     "class" : "sd-card1",
+    "keywords" : "samsung, sd-card, microsd, sdxc, samsung microsdhx evo+ 128gb, samsung microsd, sandisk sdhx, accessoires",
     "image" : [
       {
         "id" : 1,
@@ -146,6 +151,7 @@
     "category" : "accessoires",
     "type" : "SD-Card",
     "class" : "sd-card",
+    "keywords" : "sandisk, sd-card, sdxc, sandisk sdhx extreme pro 256gb, sandisk sd-card, sandisk sdhx, accessoires",
     "image" : [
       {
         "id" : 1,

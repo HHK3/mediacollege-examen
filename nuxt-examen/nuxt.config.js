@@ -42,6 +42,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~/plugins/vue-lazyload', ssr: false }
   ],
 
   /*
@@ -50,6 +51,17 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+
+    ['nuxt-fontawesome', {
+      component: 'icon',
+      imports: [
+        {
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: ['fas']
+        }
+      ]
+    }]
+
   ],
 
   /*

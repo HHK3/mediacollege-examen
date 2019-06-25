@@ -1,5 +1,6 @@
 <template>
-    <div class="mx-auto py-32" style="background: darkblue">
+    <div class="mx-auto py-30">
+        <headert />
         <products />
     </div>
 </template>
@@ -8,10 +9,24 @@
 
     // Importing Page Sections
     import products from '~/components/products/products.vue'
+    import headert from '~/components/products/headert.vue'
+
 
     export default {
         components: {
-            products
+            products,
+            headert
+        },
+
+        head () {
+            return {
+                title: 'Shop - Flash It',
+                meta: [
+                    { hid: 'description', name: 'description', content: 'Shopping page with a lot of Photography items! ' },
+                    { hid: 'keywords', name: 'keywords', content: 'flash it, flash-it, photography, nuxt, canon, nikon, ' +
+                            'sony, camera, flashes, accessoires' }
+                ]
+            }
         }
     }
 

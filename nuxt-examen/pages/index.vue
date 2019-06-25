@@ -4,7 +4,7 @@
         <div class="item-container">
             <div v-for="camera in json" :key="camera.id" class="item">
                 <nuxt-link :to="'/shop/camera/' + camera.id">
-                    <img :src="require ('@/assets/img' + camera.image[0].url)" alt="cover" :class="camera.class">
+                    <img v-lazy="require ('@/assets/img' + camera.image[0].url)" alt="cover" :class="camera.class">
                 </nuxt-link>
                 <div class="text-black font-semibold text-lg overflow-hidden whitespace-no-wrap overflow-dots pb-1">{{camera.name}}</div>
                 <nuxt-link :to="'/item/camera/' + camera.id"> Test </nuxt-link>
@@ -12,7 +12,7 @@
 
             <div v-for="flash in flashes" :key="flash.id" class="item">
                 <nuxt-link :to="'/shop/flashes/' + flash.id">
-                    <img :src="require ('@/assets/img' + flash.image[0].url)" alt="cover" :class="flash.class">
+                    <img v-lazy="require ('@/assets/img' + flash.image[0].url)" alt="cover" :class="flash.class">
                 </nuxt-link>
                 <div class="text-black font-semibold text-lg overflow-hidden whitespace-no-wrap overflow-dots pb-1">{{flash.name}}</div>
                 <nuxt-link :to="'/item/flashes/' + flash.id"> Test </nuxt-link>
@@ -20,7 +20,7 @@
 
             <div v-for="accessoires in accessoiress" :key="accessoires.id" class="item">
                 <nuxt-link :to="'/shop/accessoires/' + accessoires.id">
-                    <img :src="require ('@/assets/img' + accessoires.image[0].url)" alt="cover" :class="accessoires.class">
+                    <img v-lazy="require ('@/assets/img' + accessoires.image[0].url)" alt="cover" :class="accessoires.class">
                 </nuxt-link>
                 <div class="text-black font-semibold text-lg overflow-hidden whitespace-no-wrap overflow-dots pb-1">{{accessoires.name}}</div>
                 <nuxt-link :to="'/item/accessoires/' + accessoires.id"> Test </nuxt-link>
@@ -48,6 +48,18 @@ export default {
       accessoiress: accessoires
     }
   },
+
+    head () {
+        return {
+            title: 'Home - Flash It',
+            meta: [
+                { hid: 'description', name: 'description', content: 'Welcome to Flash It! The Online Webstore where ' +
+                        'you can buy the best Photography products for a low price!' },
+                { hid: 'keywords', name: 'keywords', content: 'flash it, flash-it, photography, nuxt, canon, nikon, ' +
+                        'sony, camera, flashes, accessoires' }
+            ]
+        }
+    }
 
 }
 </script>

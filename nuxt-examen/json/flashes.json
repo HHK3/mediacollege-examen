@@ -10,7 +10,9 @@
     "exposure_control" : "Automatic",
     "brand" : "Nikon",
     "category" : "flashes",
+    "type" : "Flash",
     "class" : "flashes",
+    "keywords" : "nikon, flash, flashes, automatic, nikon sb500, nikon flash",
     "image" : [
       {
         "id" : 1,
@@ -38,7 +40,9 @@
     "exposure_control" : "Automatic",
     "brand" : "Canon",
     "category" : "flashes",
+    "type" : "Flash",
     "class" : "flashes",
+    "keywords" : "canon, flash, flashes, automatic, canon speedlite 430ex, canon flash",
     "image" : [
       {
         "id" : 1,
@@ -66,7 +70,9 @@
     "exposure_control" : "Manually",
     "brand" : "Sony",
     "category" : "flashes",
+    "type" : "Flash",
     "class" : "flashes",
+    "keywords" : "sony, flash, flashes, manually, sony hvl f60rm, sony flash",
     "image" : [
       {
         "id" : 1,
@@ -94,7 +100,9 @@
     "exposure_control" : "Automatic",
     "brand" : "Nikon",
     "category" : "flashes",
+    "type" : "Flash",
     "class" : "flashes",
+    "keywords" : "nikon, flash, flashes, automatic, nikon sb700, nikon flash",
     "image" : [
       {
         "id" : 1,
