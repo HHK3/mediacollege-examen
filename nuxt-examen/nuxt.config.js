@@ -21,7 +21,7 @@ export default {
   },
 
   router: {
-    base: '/flashit/',
+    base: '/flashit',
   },
 
   /*
@@ -35,8 +35,6 @@ export default {
   css: [
     '~/assets/css/tailwind.css'
   ],
-
-
 
   /*
   ** Plugins to load before mounting the App
@@ -60,7 +58,9 @@ export default {
           icons: ['fas']
         }
       ]
-    }]
+    }],
+
+    '@nuxtjs/sitemap'
 
   ],
 
@@ -69,6 +69,53 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+  },
+
+  sitemap: {
+    hostname: 'http://25061.hosts1.ma-cloud.nl/flashit/',
+    gzip: true,
+    exclude: [
+      '/_nuxt/**'
+    ],
+    routes: [
+      {
+        url: '/',
+        changefreq: 'never',
+        priority: 1,
+        lastmodISO: '2019-06-26T13:30:00.000Z'
+      },
+      {
+        url: '/shop',
+        changefreq: 'never',
+        priority: .5,
+        lastmodISO: '2019-06-26T13:30:00.000Z'
+      },
+      {
+        url: '/shop/accessoires/:id',
+        changefreq: 'never',
+        priority: .33,
+        lastmodISO: '2019-06-26T13:30:00.000Z'
+      },
+      {
+        url: '/shop/camera/:id',
+        changefreq: 'never',
+        priority: .33,
+        lastmodISO: '2019-06-26T13:30:00.000Z'
+      },
+      {
+
+        url: '/shop/flashes/:id',
+        changefreq: 'never',
+        priority: .33,
+        lastmodISO: '2019-06-26T13:30:00.000Z'
+      },
+      {
+        url: '/about/',
+        changefreq: 'never',
+        priority: .8,
+        lastmodISO: '2019-06-26T13:30:00.000Z'
+      },
+    ]
   },
 
   /*

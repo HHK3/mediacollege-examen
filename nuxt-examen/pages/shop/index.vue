@@ -2,20 +2,24 @@
     <div class="mx-auto py-30">
         <headert />
         <products />
+        <contact />
     </div>
 </template>
 
 <script>
 
     // Importing Page Sections
-    import products from '~/components/products/products.vue'
     import headert from '~/components/products/headert.vue'
+    import products from '~/components/products/products.vue'
+    import contact from '~/components/contact/contact.vue'
+
 
 
     export default {
         components: {
             products,
-            headert
+            headert,
+            contact
         },
 
         head () {

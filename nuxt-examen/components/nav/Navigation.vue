@@ -33,7 +33,7 @@
             </div>
 
             <!--NAV for Mobile -->
-            <div class="menu">
+            <div class="menu menuHead">
                 <ul class="menu-nav">
 
                     <!--Home Link -->
@@ -155,8 +155,10 @@
     .nav__wrapper__list__item a {
         text-decoration: none;
         color: #fff;
+        font-family: Norwester;
         line-height: 65px;
         font-size: 1.8rem;
+        transition: ease-in-out 0.2s;
     }
 
     .nav__wrapper__list__item a:hover,
@@ -273,12 +275,13 @@
             display: inline-block;
             position: relative;
             font-size: 80px;
+            font-family: Norwester;
             text-transform: uppercase;
             padding: 2.5rem 0;
             font-weight: 300;
             color: #fff;
             text-decoration: none;
-            transition: all 1s ease-out;
+            transition: ease-in-out 0.2s;
         }
 
         .menu .nav-link:hover,

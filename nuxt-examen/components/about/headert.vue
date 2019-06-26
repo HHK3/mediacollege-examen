@@ -3,7 +3,8 @@
         <div class="bg-overlay" />
 
         <div class="grid">
-            <h1 class="mainText">Shop</h1>
+            <h1 class="mainText">About</h1>
+
         </div>
 
     </section>
@@ -11,15 +12,9 @@
 
 <script>
 
-    import shopBtn from '~/components/buttons/shopBtn.vue';
-
     export default {
 
         name: "headert",
-
-        components: {
-            shopBtn
-        },
 
     }
 

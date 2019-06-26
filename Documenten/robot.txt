@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /flashit
+Disallow: /
+Disallow: /flashit/_nuxt
+
+Sitemap: http://24721.hosts1.ma-cloud.nl/flashit/sitemap.xml

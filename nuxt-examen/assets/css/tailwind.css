@@ -1,5 +1,14 @@
 @tailwind base;
 
+@font-face {
+    font-family: Norwester;
+    src: url(~assets/fonts/norwester.otf);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Norwester;
+}
+
 .page-enter-active, .page-leave-active {
     transition: opacity .5s;
 }

@@ -97,6 +97,7 @@
     "name" : "SanDisk SDXC Extreme 64 GB 150MB",
     "urlname" : "sandisk-sdxc-extreme-64-gb-150mb-s",
     "price" : 34.99,
+    "amount" : 15,
     "type_memory_card" : "SD",
     "memory_card_version" : "SDXC UHS",
     "capacity" : 64,
@@ -114,11 +115,13 @@
       }
     ]
   },
+
   {
     "id" : 5,
     "name" : "Samsung microSDXC Evo+ 128 GB",
     "urlname" : "samsung-microsdxc-evo-128-gb",
     "price" : 39.99,
+    "amount" : 34,
     "type_memory_card" : "MicroSD",
     "memory_card_version" : "Micro SDXC",
     "capacity" : 128,
@@ -126,7 +129,7 @@
     "max_write_speed" : 90,
     "brand" : "Samsung",
     "category" : "accessoires",
-    "type" : "Sd-Card",
+    "type" : "SD-Card",
     "class" : "sd-card1",
     "keywords" : "samsung, sd-card, microsd, sdxc, samsung microsdhx evo+ 128gb, samsung microsd, sandisk sdhx, accessoires",
     "image" : [
@@ -142,6 +145,7 @@
     "name" : "SanDisk SDXC Extreme Pro 256 GB 170MB",
     "urlname" : "samsung-microsdxc-evo-128-gb",
     "price" : 129,
+    "amount" : 8,
     "type_memory_card" : "SD",
     "memory_card_version" : "SDXC UHS",
     "capacity" : 256,
