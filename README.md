@@ -1,6 +1,10 @@
 # Mediacollege Examen: Flash It
 GitHub rep. for my Front-End Exam Project: Flash It. Developed in Nuxt.js
 
+### Previous Repository
+Here's the link to my previous Repository. The reason why that Repository is empty and not being used, is that I wasn't able to Push any Commits to it.
+https://github.com/HHK3/FRO-Keuzedeel-Webshop
+
 ---
 ## Flash It
 Flash it is a Photography Website, developed by Joël in Front-End Framework Nuxt.js. In Flash It, you can look out for the new collection of Photography Products and read more information about them. This Project was for my Exams.
