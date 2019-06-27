@@ -12,8 +12,7 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: 'favicon.png' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,600' }
+      { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' },
     ],
     script: [
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js' },
@@ -21,7 +20,7 @@ export default {
   },
 
   router: {
-    base: '/flashit',
+    base: '/flashit/',
   },
 
   /*
@@ -63,13 +62,6 @@ export default {
     '@nuxtjs/sitemap'
 
   ],
-
-  /*
-  ** Axios module configuration
-  ** See https://axios.nuxtjs.org/options
-  */
-  axios: {
-  },
 
   sitemap: {
     hostname: 'http://25061.hosts1.ma-cloud.nl/flashit/',

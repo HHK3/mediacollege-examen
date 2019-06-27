@@ -14,7 +14,7 @@
                 <div>
                     <h3>
                         <icon class="envelope" icon="envelope" /> E-mail Us! <br>
-                        <a class="mail" href="mailto:info.amsterdam@timeforbooze.net">
+                        <a class="mail" href="mailto:service@flashit.com">
                             service@fla<span class="lmao">shit</span>.com
                         </a>
                     </h3>

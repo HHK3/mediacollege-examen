@@ -13,7 +13,7 @@
             <!-- NAV Logo Flash It-->
             <div class="nav__logo">
                 <nuxt-link to="/" class="">
-                    <img src="@/assets/img/logo/logo2.png" width="170px">
+                    <img src="@/assets/img/logo/logo2.png" class="logo" alt="Logo" title="Flash It Logo">
                 </nuxt-link>
             </div>
 
@@ -21,13 +21,13 @@
             <div id="mainListDiv" class="main_list nav__wrapper">
                 <ul class="navlinks nav__wrapper__list">
                     <li class="nav__wrapper__list__item">
-                        <nuxt-link to="/" class="text-white no-underline hover:text-grey-light ml-16">Home</nuxt-link>
+                        <nuxt-link to="/" class="text-white no-underline hover:text-grey-light ml-16" title="Link to Home Page">Home</nuxt-link>
                     </li>
                     <li class="nav__wrapper__list__item">
-                        <nuxt-link to="/shop" class="text-white no-underline hover:text-grey-light ml-16">Shop</nuxt-link>
+                        <nuxt-link to="/shop" class="text-white no-underline hover:text-grey-light ml-16"  title="Link to Shopping Page">Shop</nuxt-link>
                     </li>
                     <li class="nav__wrapper__list__item">
-                        <nuxt-link to="/about" class="text-white no-underline hover:text-grey-light ml-16">About</nuxt-link>
+                        <nuxt-link to="/about" class="text-white no-underline hover:text-grey-light ml-16"  title="Link to About Page">About</nuxt-link>
                     </li>
                 </ul>
             </div>
@@ -41,7 +41,7 @@
                         <nuxt-link
                             to="/"
                             class="nav-link text-white no-underline hover:text-grey-light ml-16"
-                            title="Home Page">
+                            title="Link to Home Page">
                                 Home
                         </nuxt-link>
                     </li>
@@ -51,7 +51,7 @@
                         <nuxt-link
                             to="/shop"
                             class="nav-link text-white no-underline hover:text-grey-light ml-16"
-                            title="Shop Page">
+                            title="Link to Shopping Page">
                                 Shop
                         </nuxt-link>
                     </li>
@@ -61,7 +61,7 @@
                         <nuxt-link
                             to="/about"
                             class="nav-link text-white no-underline hover:text-grey-light ml-16"
-                            title="About Page">
+                            title="Link to About Page">
                                 About
                         </nuxt-link>
 
@@ -165,6 +165,10 @@
     .nav__wrapper__list__item a:active,
     .nav__wrapper__list__item a.nuxt-link-exact-active  {
         color: #00F676;
+    }
+
+    .logo {
+        width: 170px;
     }
 
     .menu  {
