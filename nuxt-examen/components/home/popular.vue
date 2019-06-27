@@ -5,17 +5,17 @@
             <h1 class="font-heading uppercase mb-8 mainText">Our Popular Products</h1>
             <div class="productList">
                 <div class="product"  v-for="product in products">
-                    <img v-lazy="require ('~/assets/img' + product.image[0].url)" :alt="product.brand + ' ' + product.type " :title="product.name" :class="product.class + ' testert'" >
+                    <img :src="require ('~/assets/img' + product.image[0].url)" :alt="product.brand + ' ' + product.type + ', available at Flash It!'" :title="'The High Quality ' + product.name + ' | Flash It'" :class="product.class + ' testert'" >
                     <div class="product_text">
 
                         <h3>{{product.name}}</h3>
                         <span class="productPrice">{{product.price}}</span>
                         <br>
-                        <nuxt-link :to="'/shop/' + product.category + '/' + product.id" :title="'Product Page ' + product.name" class="noDec">
+                        <nuxt-link :to="'/shop/' + product.category + '/' + product.id" :title="'Click here for more info about ' + product.name + ' | Flash It'" class="noDec">
                             <moreBtn />
                         </nuxt-link>
 
-                        <nuxt-link :to="'/shop/' + product.category + '/' + product.id" :title="'Shopping Cart Page ' + product.name" class="noDec">
+                        <nuxt-link :to="'/shop/' + product.category + '/' + product.id" :title="'Click here to buy product ' + product.name + '| Flash It'" class="noDec">
                             <buyBtn />
                         </nuxt-link>
 

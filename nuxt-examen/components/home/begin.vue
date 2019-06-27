@@ -3,7 +3,7 @@
         <div class="bg-overlay" />
 
         <div class="grid">
-            <img :src="require ('~/assets/img/logo/logo.png')" alt="Flash It Logo" title="Flash It" class="logo" >
+            <img :src="require ('~/assets/img/logo/logo.png')" alt="The second logo version of Flash It" title="Flash It Logo V2" class="logo" >
             <h1 class="mainText">The best place to start your Photography Adventure</h1>
 
             <h2 class="subText">
@@ -15,7 +15,7 @@
                 <span class="check">✓</span> Delivered within 2 workdays<br>
             </h2>
 
-            <nuxt-link to="/shop" title="Shop Page Button" class="noDec">
+            <nuxt-link to="/shop" title="Start shopping now at Flash It in our Shopping Page! | Shop Page" class="noDec">
                 <shopBtn class="shopBtn"/>
             </nuxt-link>
 

@@ -24,11 +24,12 @@
 
         head () {
             return {
-                title: 'Shop - Flash It',
+                title: 'Shop here the best Cameras | Flash It | Cheap Prices',
                 meta: [
-                    { hid: 'description', name: 'description', content: 'Shopping page with a lot of Photography items! ' },
-                    { hid: 'keywords', name: 'keywords', content: 'flash it, flash-it, photography, nuxt, canon, nikon, ' +
-                            'sony, camera, flashes, accessoires' }
+                    { hid: 'description', name: 'description', content: 'Shop here for the best Cameras| Buy Mirror Reflex Camera Online | ' +
+                            'Buy Digital Camera Online | Online Photography Store | Welcome to Flash It! ' },
+                    { hid: 'keywords', name: 'keywords', content: 'Flash It,Photography,Canon,Nikon,' +
+                            'Sony,Camera,Flashes,Accessories,Shop' }
                 ]
             }
         }

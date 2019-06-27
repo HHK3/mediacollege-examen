@@ -13,7 +13,7 @@
             <!-- NAV Logo Flash It-->
             <div class="nav__logo">
                 <nuxt-link to="/" class="">
-                    <img src="@/assets/img/logo/logo2.png" class="logo" alt="Logo" title="Flash It Logo">
+                    <img src="@/assets/img/logo/logo2.png" class="logo" alt="The first logo version of Flash It" title="Flash It Logo V1">
                 </nuxt-link>
             </div>
 
@@ -21,13 +21,13 @@
             <div id="mainListDiv" class="main_list nav__wrapper">
                 <ul class="navlinks nav__wrapper__list">
                     <li class="nav__wrapper__list__item">
-                        <nuxt-link to="/" class="text-white no-underline hover:text-grey-light ml-16" title="Link to Home Page">Home</nuxt-link>
+                        <nuxt-link to="/" class="text-white no-underline hover:text-grey-light ml-16" title="Click here to go to the Home Page of Flash It | Home page">Home</nuxt-link>
                     </li>
                     <li class="nav__wrapper__list__item">
-                        <nuxt-link to="/shop" class="text-white no-underline hover:text-grey-light ml-16"  title="Link to Shopping Page">Shop</nuxt-link>
+                        <nuxt-link to="/shop" class="text-white no-underline hover:text-grey-light ml-16"  title="Click here to go to the Shopping Page of Flash It | Shop Page">Shop</nuxt-link>
                     </li>
                     <li class="nav__wrapper__list__item">
-                        <nuxt-link to="/about" class="text-white no-underline hover:text-grey-light ml-16"  title="Link to About Page">About</nuxt-link>
+                        <nuxt-link to="/about" class="text-white no-underline hover:text-grey-light ml-16"  title="Click here to go to the About Page of Flash It | About Page">About</nuxt-link>
                     </li>
                 </ul>
             </div>
@@ -41,7 +41,7 @@
                         <nuxt-link
                             to="/"
                             class="nav-link text-white no-underline hover:text-grey-light ml-16"
-                            title="Link to Home Page">
+                            title="Click here to go to the Home Page of Flash It | Home Page">
                                 Home
                         </nuxt-link>
                     </li>
@@ -51,7 +51,7 @@
                         <nuxt-link
                             to="/shop"
                             class="nav-link text-white no-underline hover:text-grey-light ml-16"
-                            title="Link to Shopping Page">
+                            title="Click here to go to the Shopping Page of Flash It | Shop Page">
                                 Shop
                         </nuxt-link>
                     </li>
@@ -61,7 +61,7 @@
                         <nuxt-link
                             to="/about"
                             class="nav-link text-white no-underline hover:text-grey-light ml-16"
-                            title="Link to About Page">
+                            title="Click here to go to the About Page of Flash It | About Page">
                                 About
                         </nuxt-link>
 

@@ -14,7 +14,7 @@
                 <div>
                     <h3>
                         <icon class="envelope" icon="envelope" /> E-mail Us! <br>
-                        <a class="mail" href="mailto:service@flashit.com">
+                        <a class="mail" title="Click here to send an E-mail to the Service Center of Flash It" href="mailto:service@flashit.com">
                             service@fla<span class="lmao">shit</span>.com
                         </a>
                     </h3>
